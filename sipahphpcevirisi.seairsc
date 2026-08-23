@@ -1,0 +1,49 @@
+bismillah
+ssdeğişken div = sstagekle("div");
+ssdeğişken yazialani = sstagekle("textarea");
+ssdeğişken buton = sstagekle("button");
+ssdeğişken alan = sstagekle("div");
+ssdeğişken center = sstagekle("center");
+ssstilver(div, "width", "99%");
+ssstilver(div, "padding", "30px");
+ssstilver(div, "min-height", "400px");
+ssstilver(div, "background-color", "black");
+ssstilver(div, "color", "white");
+ssstilver(div, "border-radius", "10px");
+ssstilver(div, "border", "3px solid red");
+ssstilver(yazialani, "border", "3px solid white");
+ssstilver(yazialani, "border-radius", "10px");
+ssstilver(yazialani, "color", "black");
+ssstilver(yazialani, "font-family", "monospace");
+ssstilver(yazialani, "resize", "none");
+ssstilver(yazialani, "height", "300px");
+ssstilver(yazialani, "width", "90%");
+ssstilver(alan, "border", "3px solid white");
+ssstilver(alan, "border-radius", "10px");
+ssstilver(alan, "color", "aqua");
+ssstilver(alan, "background-color", "black");
+ssstilver(alan, "margin-top", "40px");
+ssstilver(alan, "font-family", "monospace");
+ssstilver(alan, "height", "300px");
+ssstilver(alan, "width", "100%");
+ssmetinver(buton, "Çevir");
+ssmetinver(alan, "Buraya gelicek.");
+ssfonksiyon A(){
+    ssdeğişken deger = ssdegercek(yazialani);
+    ssata deger = ssyeritekrarla(deger, "değişken", "$");
+    ssata deger = ssyeritekrarla(deger, "dosyaya gönder", "file_put_contents");
+    ssata deger = ssyeritekrarla(deger, "yazdır", "echo");
+    ssata deger = ssyeritekrarla(deger, "kafa", "header");
+    ssata deger = ssyeritekrarla(deger, "sql bağlantısı", "mysqli_connect");
+    ssata deger = ssyeritekrarla(deger, "post", "$_POST");
+    ssata deger = ssyeritekrarla(deger, "get", "$_GET");
+    ssata deger = ssyeritekrarla(deger, "mysqli query", "mysqli_query");
+    ssmetinver(alan, deger);
+}
+sstikla(buton, A);
+ssekle(center, yazialani);
+ssekle(center, alan);
+ssekle(center, buton);
+ssekle(div, center);
+sskontaekle(div);
+elhamdülillah
